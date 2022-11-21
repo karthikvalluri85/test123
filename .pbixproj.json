@@ -1,0 +1,34 @@
+{
+"version":"0.11",
+"created":"2022-03-01T18:09:54.2556434+00:00",
+"deployments":{
+    "Files":{
+    "mode": "Report",
+    "source":        {
+                    "type": "File",
+                    "path": "mycustomers_live.pbix"     
+                     },
+    "authentication":{
+                    "type": "ServicePrincipal",
+                    "tenantId": "9a547204-0743-4754-a720-038da1d7b74b",
+                    "clientId": "11bf658d-5a9f-4734-9a0d-9174a2bff4b2",
+                    "clientSecret": "m.q8Q~PxzBTFlveJ5rM~7LQJriCQPLswnvgv-bS4"
+
+                     },
+    "options":       {
+        "import":{
+                     "nameConflict":"CreateOrOverwrite"
+                 }
+                     },
+    "environments": {
+        "PROD":{
+            "workspace":"Dev"
+        }
+    }
+
+    }
+
+          
+            }
+
+        }
